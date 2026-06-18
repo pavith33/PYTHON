@@ -8,3 +8,5 @@ class Solution:
                 return [l+1,r+1]
             elif b<target:
                 l=l+1
+            else:
+                r=r-1
