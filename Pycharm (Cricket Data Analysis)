@@ -1,0 +1,11 @@
+import numpy as np
+import matplotlib.pyplot as plt
+overs=np.arange(1,11)
+scores=[12,23,4,7,1,21,9,1,14,20]
+plt.bar(overs,scores,color="blue")
+plt.title("MI SCORE OVER WISE")
+plt.xlabel("overs")
+plt.ylabel("runs per over")
+plt.xticks(overs)
+plt.grid(axis='y',linestyle='--')
+plt.show()
