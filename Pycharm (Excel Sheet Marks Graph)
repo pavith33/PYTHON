@@ -1,0 +1,14 @@
+import matplotlib.pyplot as plt
+import pandas as pd
+import numpy as np
+df=pd.read_excel("marks105.xlsx")
+print(df.head())
+print(df.dtypes)
+s=np.array(df.iloc[:,0].astype(str))
+b=np.array(df.iloc[:,1])
+plt.bar(s,b,color="green")
+plt.title("HINDUSTAN")
+plt.xlabel(s)
+plt.ylabel(b)
+plt.xticks(rotation=45)
+plt.show()
