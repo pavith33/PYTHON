@@ -1,0 +1,11 @@
+class Solution:
+    def canVisitAllRooms(self, rooms: List[List[int]]) -> bool:
+        s = set([0])
+        q = [0]
+        while q:
+            cur = q.pop()
+            for n in rooms[cur]:
+                if n not in s:
+                    q.append(n)
+                    s.add(n)
+        return len(s) == len(rooms)
