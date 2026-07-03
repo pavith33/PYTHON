@@ -12,3 +12,4 @@ class Solution:
                 c=c+1
             else:
                 j=j+1
+        return c
